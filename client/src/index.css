@@ -22,15 +22,15 @@
 
 @layer utilities {
   .hero-gradient {
-    @apply bg-gradient-to-br from-[#f0f4f9] to-[#dae4f0];
+    @apply bg-gradient-to-br from-[#e7edf5] to-[#c7d5e8];
   }
   
   .accent-gradient {
-    @apply bg-gradient-to-br from-[#7E98B4] to-[#2A3F55];
+    @apply bg-gradient-to-br from-[#6989b0] to-[#3a5a85];
   }
   
   .soft-blue-gradient {
-    @apply bg-gradient-to-r from-[#e5edf6] to-[#c8d8e9];
+    @apply bg-gradient-to-r from-[#dce6f2] to-[#b5cae4];
   }
 
   .progress-glow {

@@ -6,7 +6,6 @@ import { LearningPath } from "@/components/LearningPath";
 import { Challenge } from "@/components/Challenge";
 import { LeaderboardTable } from "@/components/LeaderboardTable";
 import { InteractiveLessonDemo } from "@/components/InteractiveLessonDemo";
-import { Logo } from "@/components/Logo";
 import { Feature, LearningPath as LearningPathType, Challenge as ChallengeType, LeaderboardEntry } from "@/lib/types";
 import { useContext } from "react";
 import { AuthContext } from "@/App";
@@ -58,34 +57,31 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="hero-gradient text-gray-800 py-16 md:py-24">
+      <section className="hero-gradient text-white py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="animate-fadeIn">
-              <div className="mb-6">
-                <Logo size="lg" />
-              </div>
-              <h1 className="text-3xl md:text-5xl font-light tracking-tight mb-4 leading-tight">Olimpíadas Nacionais de Inteligência Artificial</h1>
-              <p className="text-xl md:text-2xl font-light mb-6 text-gray-700 text-balance">Aprenda, pratique e compita em desafios de IA para estudantes portugueses de todas as áreas.</p>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">Olimpíadas Nacionais de Inteligência Artificial</h1>
+              <p className="text-xl md:text-2xl font-light mb-6">Aprenda, pratique e compita em desafios de IA para estudantes portugueses de todas as áreas.</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/learning-paths">
-                  <Button size="lg" variant="default" className="bg-primary text-white hover:bg-primary/90 smooth-shadow">
+                  <Button size="lg" variant="default" className="bg-white text-primary hover:bg-gray-100 shadow-lg">
                     Começar a Aprender
                   </Button>
                 </Link>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/5">
+                <Button size="lg" variant="outline" className="bg-transparent text-white border border-white hover:bg-white/10">
                   Sobre as Olimpíadas
                 </Button>
               </div>
             </div>
             <div className="flex justify-center">
               <div className="relative w-full max-w-md">
-                <div className="absolute -top-6 -left-6 w-20 h-20 bg-primary/20 rounded-full opacity-40 blur-xl"></div>
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/30 rounded-full opacity-30 blur-xl"></div>
+                <div className="absolute -top-6 -left-6 w-20 h-20 bg-accent rounded-full opacity-40 blur-xl"></div>
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary rounded-full opacity-30 blur-xl"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
                   alt="IA visualização científica"
-                  className="relative z-10 rounded-soft smooth-shadow w-full"
+                  className="relative z-10 rounded-xl shadow-xl w-full"
                 />
               </div>
             </div>
