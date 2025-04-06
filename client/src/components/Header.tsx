@@ -40,9 +40,7 @@ export function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <Link href="/">
-              <a>
-                <Logo size="sm" />
-              </a>
+              <Logo size="sm" />
             </Link>
           </div>
 
