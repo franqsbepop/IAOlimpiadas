@@ -61,7 +61,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="animate-fadeIn">
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">Olimpíadas Nacionais de Inteligência Artificial</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">IA Olimpíadas Nacionais</h1>
               <p className="text-xl md:text-2xl font-light mb-6">Aprenda, pratique e compita em desafios de IA para estudantes portugueses de todas as áreas.</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/learning-paths">
@@ -205,7 +205,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Classificação das Olimpíadas</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Classificação das IA Olimpíadas</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Acompanhe os melhores participantes de todas as instituições em Portugal.</p>
           </div>
           
@@ -232,7 +232,7 @@ export default function Home() {
       <section className="py-16 soft-blue-gradient">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-light text-center text-gray-800 mb-12">
-            Comité Organizador das Olimpíadas Portuguesas de IA
+            Comité Organizador das IA Olimpíadas Portuguesas
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -278,7 +278,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <p className="text-gray-700 max-w-2xl mx-auto mb-6">
-              O comité organizador das Olimpíadas Portuguesas de IA reúne especialistas do Instituto Superior Técnico, 
+              O comité organizador das IA Olimpíadas Portuguesas reúne especialistas do Instituto Superior Técnico, 
               trabalhando em conjunto para promover a literacia em IA entre os jovens estudantes de todas as áreas.
             </p>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/5">
@@ -293,7 +293,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-4">Está pronto para iniciar a sua jornada em IA?</h2>
           <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
-            Junte-se a estudantes de todo Portugal para aprender, praticar e competir nas Olimpíadas Nacionais de IA.
+            Junte-se a estudantes de todo Portugal para aprender, praticar e competir nas IA Olimpíadas Nacionais.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {user ? (

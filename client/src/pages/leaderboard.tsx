@@ -18,7 +18,7 @@ export default function Leaderboard() {
     <main className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Classificação das Olimpíadas</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Classificação das IA Olimpíadas</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Acompanhe os melhores competidores de todas as instituições em Portugal. Complete desafios e ganhe pontos para melhorar sua posição.
           </p>
