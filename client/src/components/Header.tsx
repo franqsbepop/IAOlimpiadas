@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { useToast } from "@/hooks/use-toast";
 import { useMobile } from "@/hooks/use-mobile";
-import { Logo } from "@/components/Logo";
 
 export function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -38,8 +37,18 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <Logo />
+          <div className="flex items-center space-x-2">
+            <Link href="/">
+              <a className="flex items-center space-x-2">
+                <div className="h-10 w-10 bg-primary rounded-lg flex items-center justify-center">
+                  <i className="fas fa-brain text-white text-xl"></i>
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold text-gray-900">AI Olimpíadas</h1>
+                  <p className="text-xs text-gray-500">Portugal</p>
+                </div>
+              </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
