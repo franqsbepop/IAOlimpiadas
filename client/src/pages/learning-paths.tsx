@@ -63,9 +63,9 @@ export default function LearningPaths() {
     <main className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Trilhas de Aprendizado</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Caminhos de Aprendizagem</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore nossas trilhas de aprendizado personalizadas para diferentes áreas de estudo e níveis de experiência.
+            Explore os nossos caminhos de aprendizagem personalizados para diferentes áreas de estudo e níveis de experiência.
           </p>
         </div>
         
@@ -75,7 +75,7 @@ export default function LearningPaths() {
             <div className="flex-1">
               <Input
                 type="text"
-                placeholder="Pesquisar trilhas..."
+                placeholder="Pesquisar caminhos..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full"
@@ -146,7 +146,7 @@ export default function LearningPaths() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Nenhuma trilha encontrada</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Nenhum caminho encontrado</h3>
             <p className="text-gray-600 mb-6">Tente ajustar seus filtros ou buscar por outros termos.</p>
             <Button onClick={() => {
               setSearchTerm("");

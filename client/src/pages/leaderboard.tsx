@@ -101,9 +101,9 @@ export default function Leaderboard() {
                 <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
                   <i className="fas fa-graduation-cap text-blue-600"></i>
                 </div>
-                <h3 className="font-semibold">Concluir Trilhas</h3>
+                <h3 className="font-semibold">Concluir Caminhos</h3>
               </div>
-              <p className="text-gray-600">Ganhe 300 pontos por concluir uma trilha de aprendizado completa.</p>
+              <p className="text-gray-600">Ganhe 300 pontos por concluir um caminho de aprendizagem completo.</p>
             </div>
             
             <div className="p-4 border border-gray-200 rounded-lg">

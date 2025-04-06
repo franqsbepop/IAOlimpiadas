@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Uma Nova Forma de Aprender IA</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Nossa plataforma foi projetada para tornar o aprendizado de conceitos de IA acessível e envolvente para estudantes de todas as áreas acadêmicas.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">Nossa plataforma foi projetada para tornar a aprendizagem de conceitos de IA acessível e envolvente para estudantes de todas as áreas acadêmicas.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -110,13 +110,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Trilhas de Aprendizado</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Caminhos de Aprendizagem</h2>
               <p className="text-gray-600">Percursos personalizados para diferentes áreas de estudo e níveis de experiência.</p>
             </div>
             <div className="mt-4 md:mt-0">
               <Link href="/learning-paths">
                 <a className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition">
-                  Ver todas as trilhas <i className="fas fa-arrow-right"></i>
+                  Ver todos os caminhos <i className="fas fa-arrow-right"></i>
                 </a>
               </Link>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
             {user ? (
               <Link href="/learning-paths">
                 <Button size="lg" variant="default" className="bg-white text-primary hover:bg-gray-100 shadow-lg">
-                  Explorar Trilhas de Aprendizado
+                  Explorar Caminhos de Aprendizagem
                 </Button>
               </Link>
             ) : (

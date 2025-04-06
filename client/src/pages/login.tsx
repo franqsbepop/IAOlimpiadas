@@ -79,7 +79,7 @@ export default function Login() {
               <CardTitle className="text-2xl">Entrar</CardTitle>
             </div>
             <CardDescription>
-              Entre na sua conta para acessar as trilhas de aprendizado e participar de desafios.
+              Entre na sua conta para acessar os caminhos de aprendizagem e participar de desafios.
             </CardDescription>
           </CardHeader>
           <CardContent>

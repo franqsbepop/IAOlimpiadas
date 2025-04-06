@@ -93,7 +93,7 @@ export default function AdminContent() {
       queryClient.invalidateQueries({ queryKey: ["/api/learning-paths"] });
       toast({
         title: "Sucesso",
-        description: "Trilha de aprendizado criada com sucesso!",
+        description: "Caminho de aprendizagem criado com sucesso!",
       });
       setNewLearningPath({
         title: "",
@@ -109,7 +109,7 @@ export default function AdminContent() {
     onError: (error) => {
       toast({
         title: "Erro",
-        description: error.message || "Falha ao criar trilha de aprendizado",
+        description: error.message || "Falha ao criar caminho de aprendizagem",
         variant: "destructive",
       });
     },
@@ -228,12 +228,12 @@ export default function AdminContent() {
               <Dialog>
                 <DialogTrigger asChild>
                   <Button>
-                    <i className="fas fa-plus mr-2"></i> Nova Trilha
+                    <i className="fas fa-plus mr-2"></i> Novo Caminho
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="max-w-md">
                   <DialogHeader>
-                    <DialogTitle>Criar Nova Trilha de Aprendizado</DialogTitle>
+                    <DialogTitle>Criar Novo Caminho de Aprendizagem</DialogTitle>
                   </DialogHeader>
                   <div className="space-y-4 py-4">
                     <div className="space-y-2">
@@ -242,7 +242,7 @@ export default function AdminContent() {
                         id="title" 
                         value={newLearningPath.title}
                         onChange={(e) => setNewLearningPath({...newLearningPath, title: e.target.value})}
-                        placeholder="Título da trilha"
+                        placeholder="Título do caminho"
                         required
                       />
                     </div>
@@ -252,7 +252,7 @@ export default function AdminContent() {
                         id="description" 
                         value={newLearningPath.description}
                         onChange={(e) => setNewLearningPath({...newLearningPath, description: e.target.value})}
-                        placeholder="Descrição da trilha"
+                        placeholder="Descrição do caminho"
                         required
                         rows={3}
                       />
@@ -375,7 +375,7 @@ export default function AdminContent() {
                       <Button variant="outline">Cancelar</Button>
                     </DialogClose>
                     <Button onClick={handleCreateLearningPath} disabled={createLearningPathMutation.isPending}>
-                      {createLearningPathMutation.isPending ? "Criando..." : "Criar Trilha"}
+                      {createLearningPathMutation.isPending ? "Criando..." : "Criar Caminho"}
                     </Button>
                   </DialogFooter>
                 </DialogContent>
@@ -393,7 +393,7 @@ export default function AdminContent() {
                   </DialogHeader>
                   <div className="space-y-4 py-4">
                     <div className="space-y-2">
-                      <Label htmlFor="learningPathId">Trilha de Aprendizado*</Label>
+                      <Label htmlFor="learningPathId">Caminho de Aprendizagem*</Label>
                       <Select 
                         value={newModule.learningPathId.toString()}
                         onValueChange={(value) => setNewModule({
@@ -402,7 +402,7 @@ export default function AdminContent() {
                         })}
                       >
                         <SelectTrigger>
-                          <SelectValue placeholder="Selecione a trilha" />
+                          <SelectValue placeholder="Selecione o caminho" />
                         </SelectTrigger>
                         <SelectContent>
                           {learningPaths?.map((path) => (
@@ -633,14 +633,14 @@ export default function AdminContent() {
           
           <Tabs defaultValue="learning-paths" className="mb-6">
             <TabsList className="mb-4">
-              <TabsTrigger value="learning-paths">Trilhas de Aprendizado</TabsTrigger>
+              <TabsTrigger value="learning-paths">Caminhos de Aprendizagem</TabsTrigger>
               <TabsTrigger value="challenges">Desafios</TabsTrigger>
             </TabsList>
             
             <TabsContent value="learning-paths">
               <Card>
                 <CardHeader>
-                  <CardTitle>Trilhas de Aprendizado</CardTitle>
+                  <CardTitle>Caminhos de Aprendizagem</CardTitle>
                 </CardHeader>
                 <CardContent>
                   {loadingPaths ? (
@@ -689,7 +689,7 @@ export default function AdminContent() {
                     </div>
                   ) : (
                     <div className="text-center py-8">
-                      <p className="text-gray-500">Nenhuma trilha de aprendizado encontrada.</p>
+                      <p className="text-gray-500">Nenhum caminho de aprendizagem encontrado.</p>
                     </div>
                   )}
                 </CardContent>

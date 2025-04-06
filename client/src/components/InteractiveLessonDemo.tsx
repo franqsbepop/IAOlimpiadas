@@ -42,7 +42,7 @@ export function InteractiveLessonDemo() {
               <h3 className="font-mono text-sm border-b border-gray-200 pb-2 mb-3 text-gray-500">Interaja com o algoritmo</h3>
               <div className="flex flex-wrap gap-4">
                 <div className="w-full md:w-auto flex-1">
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Taxa de aprendizado: {learningRate / 100}</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Taxa de aprendizagem: {learningRate / 100}</label>
                   <Slider
                     value={[learningRate]}
                     onValueChange={(values) => setLearningRate(values[0])}

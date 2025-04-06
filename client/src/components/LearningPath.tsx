@@ -66,8 +66,8 @@ export function LearningPath({ learningPath, userProgress }: LearningPathProps) 
             style={buttonColorStyle}
           >
             {userProgress && userProgress.completedModules > 0 
-              ? "Continuar Trilha" 
-              : "Iniciar Trilha"}
+              ? "Continuar Caminho" 
+              : "Iniciar Caminho"}
           </Button>
         </Link>
       </div>

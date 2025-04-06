@@ -123,14 +123,14 @@ export default function Lesson({ id }: LessonProps) {
       title: "Módulo concluído",
       description: nextModuleIndex < modules.length 
         ? "Prosseguindo para o próximo módulo!" 
-        : "Parabéns! Você concluiu esta trilha de aprendizado!",
+        : "Parabéns! Você concluiu este caminho de aprendizagem!",
     });
     
     // If all modules are completed
     if (newCompletedModules.size === modules.length) {
       toast({
-        title: "Trilha concluída!",
-        description: "Parabéns por concluir toda a trilha de aprendizado!",
+        title: "Caminho concluído!",
+        description: "Parabéns por concluir todo o caminho de aprendizagem!",
         variant: "default",
       });
     }
@@ -183,12 +183,12 @@ export default function Lesson({ id }: LessonProps) {
       <div className="min-h-screen bg-gray-50 py-12 flex items-center justify-center">
         <Card className="max-w-md mx-auto">
           <CardHeader>
-            <CardTitle>Trilha não encontrada</CardTitle>
+            <CardTitle>Caminho não encontrado</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="mb-4">A trilha de aprendizado solicitada não foi encontrada.</p>
+            <p className="mb-4">O caminho de aprendizagem solicitado não foi encontrado.</p>
             <Button onClick={() => navigate("/learning-paths")}>
-              Voltar para Trilhas
+              Voltar para Caminhos
             </Button>
           </CardContent>
         </Card>
@@ -278,7 +278,7 @@ export default function Lesson({ id }: LessonProps) {
                             <h2>Introdução ao tópico</h2>
                             <p>
                               Este módulo explora os conceitos fundamentais e aplica técnicas
-                              interativas para ajudar no aprendizado. Os conceitos são apresentados
+                              interativas para ajudar na aprendizagem. Os conceitos são apresentados
                               de forma gradual, com visualizações para reforçar o entendimento.
                             </p>
                             

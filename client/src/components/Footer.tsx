@@ -39,7 +39,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="/learning-paths">
-                  <a className="text-gray-400 hover:text-white transition">Trilhas de Aprendizado</a>
+                  <a className="text-gray-400 hover:text-white transition">Caminhos de Aprendizagem</a>
                 </Link>
               </li>
               <li>

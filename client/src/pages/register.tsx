@@ -109,7 +109,7 @@ export default function Register() {
               <CardTitle className="text-2xl">Criar Conta</CardTitle>
             </div>
             <CardDescription>
-              Crie uma conta para acessar as trilhas de aprendizado e participar das Olimpíadas Nacionais de IA.
+              Crie uma conta para acessar os caminhos de aprendizagem e participar das Olimpíadas Nacionais de IA.
             </CardDescription>
           </CardHeader>
           <CardContent>
