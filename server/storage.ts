@@ -117,7 +117,7 @@ export class MemStorage implements IStorage {
     const learningPaths: InsertLearningPath[] = [
       {
         title: "Fundamentos de IA",
-        description: "Compreenda os princípios básicos da IA, algoritmos de aprendizado de máquina e suas aplicações práticas.",
+        description: "Compreenda os princípios básicos da IA, algoritmos de aprendizagem automática e as suas aplicações práticas.",
         level: "Para Iniciantes",
         category: "AI Fundamentals",
         totalModules: 12,
@@ -138,13 +138,35 @@ export class MemStorage implements IStorage {
         imageUrl: null
       },
       {
+        title: "PyTorch para IA",
+        description: "Aprenda a desenvolver modelos de IA utilizando o PyTorch, uma das frameworks mais populares para aprendizagem profunda.",
+        level: "Intermédio",
+        category: "Deep Learning",
+        totalModules: 12,
+        estimatedHours: 22,
+        primaryColor: "hsl(32, 100%, 50%)",
+        icon: "fa-fire",
+        imageUrl: null
+      },
+      {
+        title: "Embeddings e Representações",
+        description: "Explore como transformar dados em representações vetoriais para aplicações de IA, incluindo NLP e sistemas de recomendação.",
+        level: "Avançado",
+        category: "NLP",
+        totalModules: 10,
+        estimatedHours: 18,
+        primaryColor: "hsl(270, 86%, 64%)",
+        icon: "fa-network-wired",
+        imageUrl: null
+      },
+      {
         title: "IA em Biociências",
-        description: "Explore aplicações de IA em genômica, bioinformática, modelagem de proteínas e descoberta de medicamentos.",
+        description: "Explore aplicações de IA em genómica, bioinformática, modelação de proteínas e descoberta de medicamentos.",
         level: "Para Biólogos",
         category: "Domain Specific",
         totalModules: 10,
         estimatedHours: 18,
-        primaryColor: "hsl(270, 86%, 64%)",
+        primaryColor: "hsl(150, 86%, 34%)",
         icon: "fa-dna",
         imageUrl: null
       }
@@ -191,7 +213,7 @@ export class MemStorage implements IStorage {
     
     challenges.forEach(challenge => this.createChallenge(challenge));
     
-    // Create some modules for the first learning path
+    // Create learning path modules
     const modules: InsertModule[] = [
       {
         learningPathId: 1,
@@ -203,19 +225,91 @@ export class MemStorage implements IStorage {
       },
       {
         learningPathId: 1,
-        title: "Aprendizado de Máquina",
-        description: "Compreenda os tipos e aplicações do ML",
+        title: "Aprendizagem Automática",
+        description: "Compreenda os tipos e aplicações da aprendizagem automática",
         content: "Conteúdo sobre algoritmos supervisionados e não supervisionados.",
         order: 2,
         estimatedMinutes: 60,
       },
       {
         learningPathId: 1,
-        title: "Redes Neurais",
-        description: "Entenda o funcionamento das redes neurais",
-        content: "Conteúdo detalhado sobre neurônios artificiais, camadas e funções de ativação.",
+        title: "Redes Neuronais",
+        description: "Entenda o funcionamento das redes neuronais",
+        content: "Conteúdo detalhado sobre neurónios artificiais, camadas e funções de ativação.",
         order: 3,
         estimatedMinutes: 90,
+      },
+      {
+        learningPathId: 3,
+        title: "Introdução ao PyTorch",
+        description: "Aprenda os fundamentos do PyTorch para IA",
+        content: "Neste módulo, exploramos os conceitos básicos do PyTorch, uma das bibliotecas mais populares para desenvolvimento de IA. Aprenderá sobre tensores, operações básicas, autograd e como construir modelos simples. Baseado no tutorial introdutório oficial do PyTorch.",
+        order: 1,
+        estimatedMinutes: 60,
+      },
+      {
+        learningPathId: 3,
+        title: "Tensores e Operações",
+        description: "Manipulação de dados em PyTorch",
+        content: "Aprofunde os seus conhecimentos sobre tensores, a estrutura fundamental de dados no PyTorch. Aprenderá a criar, manipular e realizar operações em tensores, essenciais para o desenvolvimento de modelos de aprendizagem automática.",
+        order: 2,
+        estimatedMinutes: 45,
+      },
+      {
+        learningPathId: 3,
+        title: "Construção de Modelos Neuronais",
+        description: "Implementação prática de redes neuronais com PyTorch",
+        content: "Neste módulo, aprenderá a construir redes neuronais completas usando PyTorch. Cobriremos desde redes simples até arquiteturas mais complexas, incluindo CNN e RNN, com exemplos práticos e exercícios.",
+        order: 3,
+        estimatedMinutes: 90,
+      },
+      {
+        learningPathId: 2,
+        title: "Álgebra Linear para IA",
+        description: "Fundamentos de vetores, matrizes e operações",
+        content: "Este módulo cobre os conceitos essenciais de álgebra linear necessários para compreender algoritmos de IA: vetores, matrizes, operações matriciais, autovalores e autovetores. Baseado no currículo da DeepLearning.AI.",
+        order: 1,
+        estimatedMinutes: 75,
+      },
+      {
+        learningPathId: 2,
+        title: "Cálculo para Otimização",
+        description: "Derivadas, gradientes e otimização",
+        content: "Neste módulo, exploramos como o cálculo é utilizado para otimizar modelos de IA. Aprenderá sobre derivadas, gradientes, regra da cadeia e métodos de otimização como gradiente descendente.",
+        order: 2,
+        estimatedMinutes: 90,
+      },
+      {
+        learningPathId: 2,
+        title: "Probabilidade e Estatística",
+        description: "Conceitos probabilísticos para modelos de IA",
+        content: "Estudo da teoria da probabilidade e estatística aplicada à IA, incluindo distribuições, inferência bayesiana, teste de hipóteses e intervalos de confiança. Essencial para compreender modelos probabilísticos.",
+        order: 3,
+        estimatedMinutes: 80,
+      },
+      {
+        learningPathId: 4,
+        title: "Introdução a Embeddings",
+        description: "Fundamentos da representação vetorial de dados",
+        content: "Este módulo introduz o conceito de embeddings, técnicas para representar dados complexos como texto, imagens ou áudio em espaços vetoriais de alta dimensão. Baseado na documentação da Cohere.",
+        order: 1,
+        estimatedMinutes: 50,
+      },
+      {
+        learningPathId: 4,
+        title: "Embeddings de Texto",
+        description: "Representação semântica de linguagem natural",
+        content: "Aprenda como transformar texto em vetores densos que capturam significado semântico. Este módulo aborda modelos como Word2Vec, GloVe e embeddings contextuais modernos baseados em transformers.",
+        order: 2,
+        estimatedMinutes: 70,
+      },
+      {
+        learningPathId: 4,
+        title: "Aplicações de Embeddings",
+        description: "Casos de uso prático para embeddings",
+        content: "Explore aplicações práticas de embeddings em sistemas de IA: pesquisa semântica, sistemas de recomendação, clustering, detecção de anomalias e análise de sentimentos. Inclui exemplos práticos com a API da Cohere.",
+        order: 3,
+        estimatedMinutes: 65,
       }
     ];
     
