@@ -72,7 +72,7 @@ export function InteractiveLessonDemo() {
           
           <div className="md:col-span-2 bg-white p-6 rounded-lg border border-gray-200">
             <h3 className="font-semibold text-xl mb-4">O que é Gradiente Descendente?</h3>
-            <p className="text-gray-600 mb-4">O gradiente descendente é um algoritmo de otimização utilizado para encontrar o mínimo de uma função, ajustando iterativamente seus parâmetros.</p>
+            <p className="text-gray-600 mb-4">O gradiente descendente é um algoritmo de otimização utilizado para encontrar o mínimo de uma função, ajustando iterativamente os seus parâmetros.</p>
             
             <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 mb-4">
               <pre className="font-mono text-sm">
@@ -89,10 +89,10 @@ export function InteractiveLessonDemo() {
             <div>
               <h4 className="font-medium mb-2">Aplicações em IA:</h4>
               <ul className="list-disc pl-5 text-gray-600 space-y-1">
-                <li>Treinamento de redes neurais</li>
+                <li>Treino de redes neuronais</li>
                 <li>Regressão logística</li>
                 <li>Máquinas de vetores de suporte (SVM)</li>
-                <li>Muitos outros algoritmos de machine learning</li>
+                <li>Muitos outros algoritmos de aprendizagem automática</li>
               </ul>
             </div>
           </div>

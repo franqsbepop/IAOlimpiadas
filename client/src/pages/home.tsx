@@ -36,7 +36,7 @@ export default function Home() {
   const features: Feature[] = [
     {
       icon: "fa-graduation-cap",
-      title: "Aprendizado Interativo",
+      title: "Aprendizagem Interativa",
       description: "Cursos dinâmicos com visualizações interativas e exercícios práticos para reforçar conceitos.",
       color: "bg-primary/10 text-primary"
     },
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Uma Nova Forma de Aprender IA</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Nossa plataforma foi projetada para tornar a aprendizagem de conceitos de IA acessível e envolvente para estudantes de todas as áreas acadêmicas.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">A nossa plataforma foi projetada para tornar a aprendizagem de conceitos de IA acessível e envolvente para estudantes de todas as áreas académicas.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,7 +152,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Aprenda com Visualizações Interativas</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Nossa abordagem combina teoria e prática com visualizações inspiradas no estilo 3Blue1Brown para melhor compreensão de conceitos complexos.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">A nossa abordagem combina teoria e prática com visualizações inspiradas no estilo 3Blue1Brown para melhor compreensão de conceitos complexos.</p>
           </div>
           
           <InteractiveLessonDemo />
@@ -165,7 +165,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-2">Desafios Semanais</h2>
-              <p className="text-gray-600">Teste suas habilidades e prepare-se para as Olimpíadas Nacionais de IA.</p>
+              <p className="text-gray-600">Teste as suas competências e prepare-se para as Olimpíadas Nacionais de IA.</p>
             </div>
             <div className="mt-4 md:mt-0">
               <Link href="/challenges">
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Classificação das Olimpíadas</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Acompanhe os melhores competidores de todas as instituições em Portugal.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">Acompanhe os melhores participantes de todas as instituições em Portugal.</p>
           </div>
           
           {leaderboard ? (
@@ -214,7 +214,7 @@ export default function Home() {
           ) : (
             <div className="bg-background rounded-xl shadow-md overflow-hidden border border-gray-200">
               <div className="px-6 py-4 bg-primary text-white">
-                <h3 className="font-semibold">Melhores Competidores</h3>
+                <h3 className="font-semibold">Melhores Participantes</h3>
               </div>
               <div className="p-6 animate-pulse">
                 <div className="h-10 bg-gray-200 rounded w-full mb-4"></div>
@@ -231,7 +231,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para iniciar sua jornada em IA?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Está pronto para iniciar a sua jornada em IA?</h2>
           <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
             Junte-se a estudantes de todo Portugal para aprender, praticar e competir nas Olimpíadas Nacionais de IA.
           </p>
