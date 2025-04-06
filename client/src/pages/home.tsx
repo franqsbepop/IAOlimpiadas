@@ -242,45 +242,44 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-1">Prof. António Silva</h3>
-              <p className="text-gray-500 mb-3">Universidade de Lisboa</p>
-              <p className="text-gray-600">
-                Especialista em Aprendizagem Automática e coordenador científico das Olimpíadas.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-12 h-12 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-1">Dra. Maria Coimbra</h3>
-              <p className="text-gray-500 mb-3">Universidade do Porto</p>
-              <p className="text-gray-600">
-                Investigadora em Redes Neuronais e responsável pelo desenvolvimento dos desafios.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md text-center">
-              <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
-                <svg className="w-12 h-12 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-1">Eng. João Teixeira</h3>
+              <h3 className="text-xl font-semibold mb-1">Prof. Inês Lynce</h3>
               <p className="text-gray-500 mb-3">Instituto Superior Técnico</p>
               <p className="text-gray-600">
-                Especialista em Visão Computacional e diretor técnico da plataforma educativa.
+                Especialista em Inteligência Artificial Simbólica e coordenadora científica das Olimpíadas.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-12 h-12 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-1">Prof. Mário Figueiredo</h3>
+              <p className="text-gray-500 mb-3">Instituto Superior Técnico</p>
+              <p className="text-gray-600">
+                Especialista em Aprendizagem Automática e responsável pelo desenvolvimento dos desafios técnicos.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-12 h-12 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-1">Prof. André Martins</h3>
+              <p className="text-gray-500 mb-3">Instituto Superior Técnico</p>
+              <p className="text-gray-600">
+                Especialista em Processamento de Linguagem Natural e diretor técnico da plataforma educativa.
               </p>
             </div>
           </div>
           
           <div className="text-center mt-12">
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-              O comité organizador das Olimpíadas Portuguesas de IA reúne especialistas das principais 
-              universidades e institutos de investigação de Portugal, trabalhando em conjunto para promover 
-              a literacia em IA entre os jovens estudantes.
+              O comité organizador das Olimpíadas Portuguesas de IA reúne especialistas do Instituto Superior Técnico, 
+              trabalhando em conjunto para promover a literacia em IA entre os jovens estudantes de todas as áreas.
             </p>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/5">
               Conheça a Nossa Equipa Completa
